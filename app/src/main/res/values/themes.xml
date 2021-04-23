@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Consumer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/redVariant</item>
+        <item name="colorPrimaryVariant">@color/grey</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorSecondaryVariant">@color/red</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="toolbarStyle">@style/Widget.Consumer.Toolbar</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Consumer.caption</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Consumer.Subtitle1</item>
+
+    </style>
+
+    <!--  Toolbar Style  -->
+    <style name="Widget.Consumer.Toolbar" parent="Widget.MaterialComponents.Toolbar.Surface">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Consumer.Toolbar</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Consumer.Headline6</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.Consumer.Subtitle1</item>
+    </style>
+
+    <style name="ThemeOverlay.Consumer.Toolbar" parent="">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+    </style>
+
+
+    <!--  Button Style  -->
+    <style name="btnStyleWarningOutline" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_height">54dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="strokeColor">@color/red</item>
+        <item name="shapeAppearance">@style/btnRoundedShape</item>
+    </style>
+
+    <style name="btnStyleSuccess" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">54dp</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="backgroundTint">@color/green</item>
+        <item name="shapeAppearance">@style/btnRoundedShape</item>
+    </style>
+
+    <!--  Text Input Layout Style  -->
+    <style name="tilStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="fontFamily">@font/gilroy_medium</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="helperTextTextColor">@color/grey</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="hintTextColor">@color/subtitleColor</item>
+    </style>
+
+
+    <!--  Typography  -->
+    <style name="TextAppearance.Consumer.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/gilroy_medium</item>
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="TextAppearance.Consumer.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/gilroy_medium</item>
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="TextAppearance.Consumer.caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/aguafina_script</item>
+        <item name="android:fontFamily">@font/aguafina_script</item>
+    </style>
+
+
+
+    <!--  Shape  -->
+    <style name="btnRoundedShape" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+
+
+
+</resources>
